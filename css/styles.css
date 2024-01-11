@@ -15,6 +15,10 @@
     margin: 0 auto;
 }
 
+.header .container {
+    display: flex;
+}
+
 .logo {
     margin-right: 208px;
 }
@@ -53,7 +57,7 @@
 }
 
 .button {
-    width: 228px;
+    /*width: 228px;*/
     padding: 20px;
     font-size: 18px;
     color: rgb(255, 255, 255);
@@ -123,4 +127,65 @@
     color: rgb(188, 188, 188);
     line-height: 1.2;
     /*margin-left: 760px;*/
+}
+
+@media  screen and (max-width: 767px) {
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cafe .container .cafe-actions button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .right-food-container {
+        width: 80%;
+    }
+
+    .right-food .right-food-container h2 {
+        font-size: 25px;
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 25px;
+    }
+
+    .menu-item {
+        margin-right: 0;
+    }
+
+	.cafe {
+		padding: 70px 0 50px;
+	}
+
+    .cafe .container h1 {
+        font-size: 30px;
+    }
+
+    .cafe-actions {
+        margin-top: 25px;
+        display: flex;
+        /*justify-content: space-between;*/
+        /*margin-right: 25px;*/
+    }
+
+
+
 }
